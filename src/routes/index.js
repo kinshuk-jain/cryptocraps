@@ -23,11 +23,6 @@ const routes = {
     //   path: '/register',
     //   load: () => import(/* webpackChunkName: 'register' */ './register'),
     // },
-    {
-      path: '/about',
-      load: () => import(/* webpackChunkName: 'about' */ './about'),
-    },
-
     // Wildcard routes, e.g. { path: '(.*)', ... } (must go last)
     {
       path: '(.*)',
