@@ -2,11 +2,11 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import s from './CategoryNav.css';
+import s from './QuickLinks.css';
 
 import { showNavBar } from '../../actions/categoryNavActions';
 
-class CategoryNav extends React.Component {
+class QuickLinks extends React.Component {
   static propTypes = {
     showSidebar: PropTypes.bool,
     showNavBar: PropTypes.func.isRequired,
@@ -19,7 +19,7 @@ class CategoryNav extends React.Component {
   render() {
     return this.props.showSidebar ? (
       <div className={s.container}>
-        <div className={s.title}>Currencies</div>
+        <div className={s.title}>Quick Links</div>
         <div className={s.caret} onClick={() => this.props.showNavBar(false)}>
           <i className="icon-chevron-left" />
         </div>
@@ -88,5 +88,5 @@ export default withStyles(s)(
     dispatch => ({
       showNavBar: (payload = true) => dispatch(showNavBar(payload)),
     }),
-  )(CategoryNav),
+  )(QuickLinks),
 );

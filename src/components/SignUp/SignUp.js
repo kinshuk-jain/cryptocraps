@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import s from './Addquestion.css';
+import s from './SignUp.css';
 
 import { showAdditionalQuestion } from '../../actions/additionalQuestion';
 

@@ -6,11 +6,11 @@
   margin: 0;
   margin-top: 10px;
   font-size: 14px;
-  border-top: 1px solid var(--Gallery);
+  border-top: 1px solid var(--Trout);
   list-style: none;
   padding: 0;
   padding-top: 10px;
-  color: var(--Trout, #4c505d);
+  color: var(--Gallery);
 }
 
 .userOptions li {
@@ -21,7 +21,7 @@
 
 .userOptions li:hover {
   cursor: pointer;
-  color: var(--Black);
+  color: var(--Silver);
 }
 
 .userOptions li:last-child {

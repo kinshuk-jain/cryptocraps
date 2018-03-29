@@ -18,15 +18,16 @@
 .menu {
   z-index: 99;
   position: absolute;
+  color: var(--White);
   top: -6px;
   left: -7px;
   width: 200px;
   margin: 0;
-  background: var(--White);
+  background: var(--CodGray2);
   display: none;
   list-style: none;
   padding: 0;
-  box-shadow: 1px 2px 4px var(--Silver);
+  box-shadow: 1px 2px 4px var(--Trout);
 }
 
 .menu li {
@@ -35,8 +36,8 @@
 }
 
 .menu li:hover:not(.categoryTitle) {
-  color: var(--Lochmara);
-  background: var(--Alabaster);
+  color: var(--Silver);
+  background: var(--MineShaft);
   cursor: pointer;
 }
 
@@ -47,9 +48,9 @@
 
 .categoryTitle {
   padding-bottom: 15px;
-  border-bottom: 1px solid var(--Gallery);
+  border-bottom: 1px solid var(--Trout);
 }
 
 .categoryTitle span {
-  color: var(--Lochmara);
+  color: var(--Jade);
 }

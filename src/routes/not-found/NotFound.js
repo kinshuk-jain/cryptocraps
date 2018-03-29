@@ -4,7 +4,7 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './NotFound.css';
 
 import Footer from '../../components/Footer';
-import SuggestedQues from '../../components/SuggestedQues';
+import PopularEvents from '../../components/PopularEvents';
 import Link from '../../components/Link';
 
 class NotFound extends React.Component {
@@ -25,7 +25,7 @@ class NotFound extends React.Component {
           <Link to="/">Go To Home</Link>
         </div>
         <div className={s.containerRight}>
-          <SuggestedQues />
+          <PopularEvents />
         </div>
         <Footer />
       </div>

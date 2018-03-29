@@ -8,7 +8,7 @@ import Tags from './components/Tags';
 import Comments from './components/Comments';
 import Feedback from '../../components/Feedback';
 import Footer from '../../components/Footer';
-import SuggestedQues from '../../components/SuggestedQues';
+import PopularEvents from '../../components/PopularEvents';
 import NegativeFeedback from '../../components/NegativeFeedback';
 
 // TODO: add a comment with escape html
@@ -115,9 +115,9 @@ class QuestionPage extends React.Component {
           <div>Answer Question</div>
         </div>
         <div className={s.rightContainer}>
-          <SuggestedQues />
+          <PopularEvents />
           <div className={s.topPadding}>
-            <SuggestedQues title="Related Questions" />
+            <PopularEvents title="Related Questions" />
           </div>
         </div>
         <NegativeFeedback />

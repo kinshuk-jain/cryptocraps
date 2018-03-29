@@ -2,8 +2,8 @@
 
 .container {
   border-radius: 15px;
-  border: 1px solid var(--Gallery);
-  background: var(--White);
+  border: 1px solid var(--MineShaft);
+  background: var(--CodGray2);
   width: 100%;
   min-height: 200px;
   margin: 15px 0;
@@ -16,7 +16,7 @@
 }
 
 .container:hover {
-  box-shadow: 1px 1px #eee;
+  box-shadow: 1px 1px var(--Trout);
 }
 
 .questionContainer {

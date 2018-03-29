@@ -12,7 +12,7 @@
  * ========================================================================== */
 
 html {
-  color: var(--Trout);
+  color: var(--Gallery);
   font-weight: 400;
   font-size: 1em; /* ~16px; */
   font-family: var(--font-family-base);
@@ -20,10 +20,25 @@ html {
   line-height: 1.375; /* ~22px */
 }
 
+/* Track */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--MineShaft);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--Black);
+}
+
 body {
   margin: 0;
   width: 100%;
-  background: var(--Alabaster);
+  background: var(--MineShaft);
 }
 
 *,

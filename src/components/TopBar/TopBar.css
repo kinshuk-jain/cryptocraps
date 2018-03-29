@@ -2,16 +2,16 @@
 
 .container {
   width: 100%;
-  background: var(--PictonBlue);
+  background: var(--Trout);
   color: var(--White);
   padding: 5px 4%;
 }
 
 .cross {
-  font-weight: 600;
+  font-weight: 400;
   display: inline-block;
   cursor: pointer;
-  color: var(--Black, #000);
+  color: var(--White);
   position: absolute;
   right: 20px;
 }

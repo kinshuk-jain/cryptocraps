@@ -9,8 +9,8 @@
   position: absolute;
   z-index: 1;
   top: 20px;
-  background: var(--White);
-  box-shadow: 1px 2px 4px var(--Silver);
+  background: var(--MineShaft);
+  box-shadow: 1px 2px 4px var(--Trout);
   right: 5px;
   padding: 0;
   margin: 0;
@@ -23,7 +23,7 @@
 }
 
 .flagPin li:hover {
-  background: var(--Alabaster);
+  color: var(--Silver);
 }
 
 .flagPin li i {

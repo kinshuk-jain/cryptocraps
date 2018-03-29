@@ -18,15 +18,15 @@ class Header extends Component {
       <div className={s.header}>
         <MenuBar />
         <Link className={s.logoInfo} target="_self" to="/">
-          knowyourcrypto
+          CryptoCraps
         </Link>
         <SearchBar />
-        <div className={s.askQuestion}>Answer Question</div>
+        <div className={s.askQuestion}>Login</div>
         <div
           className={s.askQuestion}
           onClick={() => this.props.showAdditionalQuestion(true)}
         >
-          Ask Question
+          Sign Up
         </div>
       </div>
     );

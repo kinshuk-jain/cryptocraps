@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import s from './SuggestedQues.css';
+import s from './PopularEvents.css';
 
-class SuggestedQues extends React.Component {
+class PopularEvents extends React.Component {
   static propTypes = {
     title: PropTypes.string,
-    data: PropTypes.arrayOf(PropTypes.string),
+    data: PropTypes.arrayOf(PropTypes.string), // eslint-disable-line no-unused-prop-types
   };
 
   static defaultProps = {
-    title: 'Popular Questions',
-    data: [],
+    title: 'Popular Events',
+    data: [], // eslint-disable-line no-unused-prop-types
   };
 
   render() {
@@ -26,4 +26,4 @@ class SuggestedQues extends React.Component {
   }
 }
 
-export default withStyles(s)(SuggestedQues);
+export default withStyles(s)(PopularEvents);
