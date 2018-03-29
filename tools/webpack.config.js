@@ -36,9 +36,9 @@ const config = {
     path: path.resolve(__dirname, '../build/public/assets'),
     publicPath: '/assets/',
     pathinfo: isVerbose,
-    filename: isDebug ? '[name].js' : '[name].[chunkhash:8].js',
+    filename: isDebug ? '[name].js?[chunkhash:8]' : '[name].[chunkhash:8].js',
     chunkFilename: isDebug
-      ? '[name].chunk.js'
+      ? '[name].chunk.js?[chunkhash:8]'
       : '[name].[chunkhash:8].chunk.js',
     // Point sourcemap entries to original disk location (format as URL on Windows)
     devtoolModuleFilenameTemplate: info =>
@@ -130,6 +130,7 @@ const config = {
           },
 
           // Process internal/project styles (from src folder)
+          // for @import and url()
           {
             include: path.resolve(__dirname, '../src'),
             loader: 'css-loader',
