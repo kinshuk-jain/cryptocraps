@@ -43,6 +43,10 @@ Application Structure -
 |    |-- reducers: reducers common to more than 2 components
 |    |-- selectors: selectors common to more than 2 components
 |    |-- components: Presentational/Container components that are common
+|    |     |-- Container: Container components
+|    |     |-- Components: Presentational components
+|    |     |-- State: State for this Pod
+|    |     |-- Data: all json files, fetch calls whether in actions or otherwise
 |    |-- constants: application wide constants
 |    |-- core: application wide utility functions
 |    |-- fonts: app fonts
@@ -50,6 +54,4 @@ Application Structure -
 |    |-- commonStyles: application wide CSS
 |    |-- routes: Route bases classification of components
 |    |     |-- [route]: route name. Ex for http://app.com/home. This will be `home`
-|    |     |      |-- Container: Container components
-|    |     |      |-- Components: Presentational components
-|    |     |      |-- State: State for this Pod
+

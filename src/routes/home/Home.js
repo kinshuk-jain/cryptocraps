@@ -9,8 +9,8 @@ import PostCard from '../../components/PostCard';
 import PopularEvents from '../../components/PopularEvents';
 import QuickLinks from '../../components/QuickLinks';
 import SignUp from '../../components/SignUp';
-import NegativeFeedback from '../../components/NegativeFeedback';
 import PinBar from '../../components/PinBar';
+import FeedbackBarContainer from '../../components/Feedback/container/FeedbackBarContainer/FeedbackBarContainer.component';
 
 class Home extends React.Component {
   static propTypes = {
@@ -41,7 +41,7 @@ class Home extends React.Component {
           </div>
         </div>
         <SignUp />
-        <NegativeFeedback />
+        <FeedbackBarContainer />
         <PinBar />
       </div>
     );

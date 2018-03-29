@@ -1,7 +1,8 @@
-@import '../variables.css';
+@import '../../../variables.css';
 
 .negativeFeedback {
   position: relative;
+  color: var(--Trout);
   top: 5%;
 }
 
@@ -18,15 +19,15 @@
 .label {
   font-size: 14px;
   padding: 10px 0;
-  color: var(--Astronaut);
+  color: var(--Jade);
   font-weight: 600;
 }
 
 select {
   border: none;
-  background: var(--Gallery);
+  background: var(--Alabaster);
   border-radius: 0;
-  border-bottom: 1px solid var(--Trout);
+  border-bottom: 1px solid var(--Sail);
   outline: none;
   padding: 5px;
 }
@@ -36,7 +37,7 @@ select {
 }
 
 .submit {
-  background: var(--Astronaut);
+  background: var(--Jade);
   color: var(--White);
   padding: 10px 20px;
   margin-top: 15px;
