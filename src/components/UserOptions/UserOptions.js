@@ -7,14 +7,6 @@ class UserOptions extends React.Component {
     return (
       <ul className={s.userOptions}>
         <li>
-          <i className="icon-arrow-up" />
-          <span className={s.optionText}>Upvote(32)</span>
-        </li>
-        <li>
-          <i className="icon-arrow-down" />
-          <span className={s.optionText}>Downvote(2)</span>
-        </li>
-        <li>
           <i className="icon-share" />
           <span className={s.optionText}>Share(1.3k)</span>
         </li>

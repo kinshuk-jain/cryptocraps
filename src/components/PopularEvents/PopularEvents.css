@@ -10,7 +10,7 @@
 
 .question {
   cursor: pointer;
-  padding: 10px 0;
+  padding: 15px 0;
   border-bottom: 1px solid var(--Trout);
   width: 90%;
   margin: 0 auto;

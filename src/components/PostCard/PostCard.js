@@ -4,7 +4,7 @@ import s from './PostCard.css';
 import history from '../../history';
 
 import UserOptions from '../UserOptions';
-import FlagOptions from '../FlagOptions';
+import { FlagOption } from '../FlagOptions';
 
 class PostCard extends React.Component {
   render() {
@@ -21,7 +21,7 @@ class PostCard extends React.Component {
             What is Bitcoin?
           </div>
           <div className={s.flagpin}>
-            <FlagOptions postId={postId} title="what is bitcoin?" />
+            <FlagOption eventId={postId} title="what is bitcoin?" />
           </div>
         </div>
         <div className={s.answerContainer}>

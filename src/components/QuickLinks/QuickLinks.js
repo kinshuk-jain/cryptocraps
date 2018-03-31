@@ -25,25 +25,25 @@ class QuickLinks extends React.Component {
         </div>
         <ul className={s.catList}>
           <li>
-            <i className="icon-BTC-alt" /> Bitcoin
+            <i className="icon-BTC-alt" /> Football
           </li>
           <li>
-            <i className="icon-BCH-alt" /> Bitcoin Cash
+            <i className="icon-BCH-alt" /> Boxing
           </li>
           <li>
-            <i className="icon-GLD" /> Gold Coin
+            <i className="icon-GLD" /> Hockey
           </li>
           <li>
-            <i className="icon-ETC" /> Ethereum
+            <i className="icon-ETC" /> Tennis
           </li>
           <li>
-            <i className="icon-DASH-alt" /> Dash
+            <i className="icon-DASH-alt" /> Darts
           </li>
           <li>
-            <i className="icon-XRP-alt" /> Ripple
+            <i className="icon-XRP-alt" /> Rugby
           </li>
           <li>
-            <i className="icon-OMG" /> OmiseGo
+            <i className="icon-OMG" /> Basketball
           </li>
         </ul>
       </div>

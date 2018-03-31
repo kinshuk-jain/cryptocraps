@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './NotFound.css';
 
-import Footer from '../../components/Footer';
+import { Footer } from '../../components/Footer';
 import PopularEvents from '../../components/PopularEvents';
-import Link from '../../components/Link';
+import { Link } from '../../components/Link';
 
 class NotFound extends React.Component {
   static propTypes = {

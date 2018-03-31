@@ -146,6 +146,6 @@
     "deploy": "cp -R build/* functions/server/ && firebase deploy",
     "render": "babel-node tools/run render",
     "serve": "babel-node tools/run runServer",
-    "start": "babel-node tools/run start"
+    "start": "babel-node tools/run start --watch"
   }
 }

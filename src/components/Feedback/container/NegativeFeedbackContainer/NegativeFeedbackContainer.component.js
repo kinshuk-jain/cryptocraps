@@ -9,7 +9,6 @@ import NegativeFeedback from '../../components/NegativeFeedback/NegativeFeedback
 
 // TODO: submit form
 class NegativeFeedbackContainer extends Component {
-  state = this.initialState;
   initialState = {
     input: {
       selectValue: 'select',
@@ -23,6 +22,7 @@ class NegativeFeedbackContainer extends Component {
     successSubmit: false,
     _issue: {},
   };
+  state = this.initialState;
 
   validateSelect = () => {
     const { input } = this.state;

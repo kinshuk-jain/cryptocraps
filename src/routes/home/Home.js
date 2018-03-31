@@ -10,7 +10,7 @@ import PopularEvents from '../../components/PopularEvents';
 import QuickLinks from '../../components/QuickLinks';
 import SignUp from '../../components/SignUp';
 import PinBar from '../../components/PinBar';
-import FeedbackBarContainer from '../../components/Feedback/container/FeedbackBarContainer/FeedbackBarContainer.component';
+import { FeedbackBarContainer } from '../../components/Feedback/';
 
 class Home extends React.Component {
   static propTypes = {

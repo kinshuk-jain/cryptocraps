@@ -12,10 +12,11 @@ class MenuBar extends React.Component {
             <i className="icon-bars" />
             <span> Categories</span>
           </li>
-          <li>ICO</li>
-          <li>ICO</li>
-          <li>ICO</li>
-          <li>ICO</li>
+          <li>Quick Links</li>
+          <li>Popular Events</li>
+          <li>Sports</li>
+          <li>Politics</li>
+          <li>CryptoCurrency</li>
         </ul>
       </div>
     );

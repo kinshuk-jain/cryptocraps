@@ -7,7 +7,7 @@ import s from './QuestionPage.css';
 import Tags from './components/Tags';
 import Comments from './components/Comments';
 // import Feedback from '../../components/Feedback';
-import Footer from '../../components/Footer';
+import { Footer } from '../../components/Footer';
 import PopularEvents from '../../components/PopularEvents';
 // import NegativeFeedback from '../../components/NegativeFeedback';
 

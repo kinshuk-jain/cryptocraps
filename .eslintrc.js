@@ -79,6 +79,8 @@ module.exports = {
     // Turn off default export warning
     'import/prefer-default-export': 'off',
 
+    'react/sort-comp': 'off',
+
     // Allow .js files to use JSX syntax
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
     'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }],

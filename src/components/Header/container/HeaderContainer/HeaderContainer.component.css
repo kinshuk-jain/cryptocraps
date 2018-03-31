@@ -1,4 +1,4 @@
-@import '../variables.css';
+@import '../../../variables.css';
 
 .header {
   position: relative;
@@ -21,23 +21,6 @@
   outline: none;
   display: inline-block;
   text-decoration: none;
-}
-
-.askQuestion {
-  color: #fff;
-  background: var(--Jade);
-  padding: 5px 15px;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-left: 10px;
-  position: relative;
-  top: 20px;
-  float: right;
-}
-
-.askQuestion i {
-  position: relative;
-  top: 1px;
 }
 
 @media (max-width: 1024px) {

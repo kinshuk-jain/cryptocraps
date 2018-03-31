@@ -27,12 +27,12 @@ html {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--MineShaft);
+  background: var(--Black);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--Black);
+  background: var(--CodGray2);
 }
 
 body {
