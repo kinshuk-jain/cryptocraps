@@ -8,20 +8,20 @@ import { FlagOption } from '../FlagOptions';
 
 class PostCard extends React.Component {
   render() {
-    const postId = `${Math.random()}1231231`;
+    const eventId = `${Math.random()}1231231`;
     return (
       <div className={s.container}>
         <div className={s.questionContainer}>
           <div
             className={s.question}
             onClick={() => {
-              history.push(`/question/${postId}`);
+              history.push(`/question/${eventId}`);
             }}
           >
             What is Bitcoin?
           </div>
           <div className={s.flagpin}>
-            <FlagOption eventId={postId} title="what is bitcoin?" />
+            <FlagOption eventId={eventId} title="what is bitcoin?" />
           </div>
         </div>
         <div className={s.answerContainer}>

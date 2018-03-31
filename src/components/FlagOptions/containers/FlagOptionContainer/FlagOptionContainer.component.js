@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import { addToPinBar } from '../../../../actions/pinBarActions';
-import FlagPinComponent from '../../components/FlagPin/FlagPin.component';
+import { FlagOptions } from '../../components';
 import { FLAG_OPTIONS } from '../../FlagOptions.constants';
 import { NegativeFeedbackContainer } from '../../../Feedback';
 
@@ -48,7 +48,7 @@ class FlagOptionContainer extends React.Component {
         {showNegativeFeedback && (
           <NegativeFeedbackContainer modalCloseFn={this.modalCloseFn} />
         )}
-        <FlagPinComponent onOptionClick={this.flagOptionClickHandler} />
+        <FlagOptions onOptionClick={this.flagOptionClickHandler} />
       </div>
     );
   }

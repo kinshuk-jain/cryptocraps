@@ -7,7 +7,7 @@ import { Link } from '../../../Link';
 import SearchBar from '../../../SearchBar';
 import MenuBar from '../../../MenuBar';
 
-import { ActionContainer } from '../../../Header/';
+import { ActionContainer } from '../../../Header';
 
 class HeaderContainer extends Component {
   render() {

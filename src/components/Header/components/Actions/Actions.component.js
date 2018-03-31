@@ -2,7 +2,7 @@ import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Actions.component.css';
 
-import ActionHelper from './ActionHelper/ActionHelper.component';
+import { ActionHelper } from '../../components';
 import { ACTION_DATA } from '../../data/action.data';
 
 class HeaderActions extends React.Component {

@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderActions from '../../components/Actions/Actions.component';
+import { HeaderActions } from '../../components';
 
 class ActionContainer extends React.Component {
   render() {

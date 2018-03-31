@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import PositiveFeedback from '../../components/PositiveFeedback/PositiveFeedback.component';
+import { PositiveFeedback } from '../../components';
 
 // TODO: Submit feedback
 class PositiveFeedbackContainer extends React.Component {

@@ -5,7 +5,7 @@ import { ALLOWED_COMMENT_LENGTH } from '../../Feedback.constants';
 // import { escapeHTML } from '../../../../core/utils';
 import data from '../../data/data.json';
 
-import NegativeFeedback from '../../components/NegativeFeedback/NegativeFeedback';
+import { NegativeFeedback } from '../../components';
 
 // TODO: submit form
 class NegativeFeedbackContainer extends Component {

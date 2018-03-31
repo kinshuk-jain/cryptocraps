@@ -1,7 +1,6 @@
 import React from 'react';
-import FeedbackBar from '../../components/FeedbackBar/FeedbackBar.component';
-import PositiveFeedbackContainer from '../PositiveFeedbackContainer/PositiveFeedbackContainer.component';
-import NegativeFeedbackContainer from '../NegativeFeedbackContainer/NegativeFeedbackContainer.component';
+import { FeedbackBar } from '../../components';
+import { PositiveFeedbackContainer, NegativeFeedbackContainer } from '../../../Feedback';
 
 // TODO: Submit feedback
 class FeedbackBarContainer extends React.Component {
