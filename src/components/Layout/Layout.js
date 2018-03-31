@@ -9,7 +9,7 @@ import cx from 'classnames';
 // external-global styles must be imported in your JS.
 import normalizeCss from 'normalize.css';
 import s from './Layout.css';
-import { HeaderContainer } from '../Header';
+import { Header } from '../Header';
 import TopBar from '../TopBar';
 import { addRemoveScrollEventListener, scrollToTop } from '../../core/utils';
 
@@ -44,7 +44,7 @@ class Layout extends React.Component {
       <div className={s.pageContainer}>
         <div className={s.topBarContainer}>
           <TopBar />
-          <HeaderContainer />
+          <Header />
         </div>
         <div className={cx(s.child, { [s.addTopBarHeight]: !hideTopBar })}>
           {this.props.children}

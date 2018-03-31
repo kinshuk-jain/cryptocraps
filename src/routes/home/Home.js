@@ -10,7 +10,7 @@ import PopularEvents from '../../components/PopularEvents';
 import QuickLinks from '../../components/QuickLinks';
 import SignUp from '../../components/SignUp';
 import PinBar from '../../components/PinBar';
-import { FeedbackBarContainer } from '../../components/Feedback/';
+import { FeedbackBar } from '../../components/Feedback/';
 
 class Home extends React.Component {
   static propTypes = {
@@ -41,7 +41,7 @@ class Home extends React.Component {
           </div>
         </div>
         <SignUp />
-        <FeedbackBarContainer />
+        <FeedbackBar />
         <PinBar />
       </div>
     );

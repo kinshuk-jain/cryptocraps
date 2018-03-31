@@ -9,7 +9,7 @@ import MenuBar from '../../../MenuBar';
 
 import { ActionContainer } from '../../../Header';
 
-class HeaderContainer extends Component {
+class Header extends Component {
   render() {
     return (
       <div className={s.header}>
@@ -24,4 +24,4 @@ class HeaderContainer extends Component {
   }
 }
 
-export default withStyles(s)(HeaderContainer);
+export default withStyles(s)(Header);

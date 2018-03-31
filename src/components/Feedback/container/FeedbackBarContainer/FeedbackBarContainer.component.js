@@ -6,7 +6,7 @@ import {
 } from '../../../Feedback';
 
 // TODO: Submit feedback
-class FeedbackBarContainer extends React.Component {
+export class FeedbackBarContainer extends React.Component {
   state = {
     showPositiveModal: false,
     showNegativeModal: false,
@@ -42,5 +42,3 @@ class FeedbackBarContainer extends React.Component {
     );
   }
 }
-
-export default FeedbackBarContainer;

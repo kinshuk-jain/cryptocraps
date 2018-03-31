@@ -1,4 +1,4 @@
 import ActionContainer from './container/ActionContainer/ActionContainer.component';
-import HeaderContainer from './container/HeaderContainer/HeaderContainer.component';
+import Header from './container/HeaderContainer/HeaderContainer.component';
 
-export { ActionContainer, HeaderContainer };
+export { ActionContainer, Header };
