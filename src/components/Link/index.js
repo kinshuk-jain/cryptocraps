@@ -1,3 +1,3 @@
-import Link from './components/Link.component';
+import Link from './containers/Link.container';
 
 export { Link };

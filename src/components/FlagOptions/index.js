@@ -1,3 +1,3 @@
-import { FlagOption } from './containers/FlagOptionContainer/FlagOptionContainer.component';
+import { FlagOption } from './containers/FlagOptionContainer/FlagOptionContainer.container';
 
 export { FlagOption };

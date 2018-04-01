@@ -1,5 +1,5 @@
-import { FeedbackBarContainer as FeedbackBar } from './container/FeedbackBarContainer/FeedbackBarContainer.component';
-import NegativeFeedbackContainer from './container/NegativeFeedbackContainer/NegativeFeedbackContainer.component';
-import PositiveFeedbackContainer from './container/PositiveFeedbackContainer/PositiveFeedbackContainer.component';
+import { FeedbackBarContainer as FeedbackBar } from './containers/FeedbackBarContainer/FeedbackBarContainer.container';
+import NegativeFeedbackContainer from './containers/NegativeFeedbackContainer/NegativeFeedbackContainer.container';
+import PositiveFeedbackContainer from './containers/PositiveFeedbackContainer/PositiveFeedbackContainer.container';
 
 export { FeedbackBar, NegativeFeedbackContainer, PositiveFeedbackContainer };

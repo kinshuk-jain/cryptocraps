@@ -1,9 +1,9 @@
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Footer.component.css';
-import { Link } from '../../Link';
+import { Link } from '../../../Link';
 
-class Footer extends React.Component {
+class FooterComponent extends React.Component {
   render() {
     return (
       <div className={s.root}>
@@ -28,4 +28,4 @@ class Footer extends React.Component {
   }
 }
 
-export default withStyles(s)(Footer);
+export default withStyles(s)(FooterComponent);

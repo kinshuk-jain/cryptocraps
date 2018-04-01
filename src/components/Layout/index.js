@@ -1,3 +1,3 @@
-import { Layout } from './containers/Layout/Layout.component';
+import { Layout } from './containers/Layout/Layout.container';
 
 export { Layout };

@@ -1,3 +1,3 @@
-import withHover from './container/HoverContainer/HoverContainer.component';
+import withHover from './containers/HoverContainer/HoverContainer.container';
 
 export { withHover };
