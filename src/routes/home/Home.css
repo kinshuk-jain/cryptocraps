@@ -1,7 +1,6 @@
 @import '../../components/variables.css';
 
 .root {
-  padding-left: 10px;
   padding-top: 15px;
 }
 
@@ -19,13 +18,15 @@
 }
 
 .mid {
-  width: 53%;
-  margin-left: 10px;
+  width: 56%;
+  padding-left: 10px;
+  box-sizing: border-box;
 }
 
 .right {
-  width: 25%;
-  margin-left: 10px;
+  box-sizing: border-box;
+  width: 24%;
+  padding-left: 10px;
 }
 
 .smallLeft {

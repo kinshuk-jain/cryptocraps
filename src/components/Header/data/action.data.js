@@ -17,4 +17,8 @@ export const ACTION_DATA = [
       'How is this different from betting in real currency',
     ],
   },
+  {
+    name: 'notifications',
+    data: ['order processesed', 'bet placed'],
+  },
 ];

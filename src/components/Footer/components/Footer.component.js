@@ -8,7 +8,7 @@ class Footer extends React.Component {
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <span className={s.text}>© knowyourcrypto</span>
+          <span className={s.text}>© CryptoCraps</span>
           <span className={s.spacer}>·</span>
           <Link className={s.link} to="/">
             Home
@@ -22,6 +22,7 @@ class Footer extends React.Component {
             Ask Question
           </Link>
         </div>
+        <div className={s.container}>Full bakar SEO waali</div>
       </div>
     );
   }

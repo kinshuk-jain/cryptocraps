@@ -10,7 +10,7 @@ class HeaderActions extends React.Component {
     return (
       <div
         className={s.actionContainer}
-        style={{ left: `${25 - 3 * (ACTION_DATA.length - 1)}%` }}
+        style={{ left: `${25 - 5 * (ACTION_DATA.length - 1)}%` }}
       >
         {ACTION_DATA.map((action, i) => (
           <ActionHelper

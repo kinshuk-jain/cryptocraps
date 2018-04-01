@@ -1,8 +1,8 @@
 @import '../../variables.css';
 
 .root {
-  background: var(---MineShaft, #333);
-  color: var(--White, #fff);
+  background: var(--CodGray);
+  color: var(--Silver);
 }
 
 .container {
