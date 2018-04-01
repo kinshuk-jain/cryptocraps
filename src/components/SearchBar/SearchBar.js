@@ -42,7 +42,7 @@ class SearchBar extends Component {
     let searchText = '';
     if (selectedKey >= 0 && selectedKey < searchResults.length) {
       // in search suggestions
-      searchText = this.recentSearches[selectedKey];
+      searchText = searchResults[selectedKey];
     } else if (
       selectedKey >= searchResults.length &&
       selectedKey < searchResults.length + this.recentSearches.length
@@ -52,6 +52,10 @@ class SearchBar extends Component {
     }
     this.search.value = searchText;
     return searchText;
+  }
+
+  cleanUp = () => {
+    this.setState({ expand: false, selectedKey: -1 });
   }
 
   handleChange(e) {
@@ -84,7 +88,7 @@ class SearchBar extends Component {
           /* on enter click save query in localStorage */
           this.setRecentSearches(searchString);
         }
-        this.search.blur();
+        this.cleanUp();
         break;
       default:
         // user typed something into search box

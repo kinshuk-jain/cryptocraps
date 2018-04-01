@@ -1,5 +1,5 @@
-@import '../../commonStyles/customFont.css';
-@import '../variables.css';
+@import '../../../../commonStyles/customFont.css';
+@import '../../../variables.css';
 
 /*
  * normalize.css is imported in JS file.

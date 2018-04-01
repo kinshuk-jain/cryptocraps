@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from './Home';
-import Layout from '../../components/Layout';
+import { Layout } from '../../components/Layout';
 
 async function action(
   {

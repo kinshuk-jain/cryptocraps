@@ -5,8 +5,9 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import App from '../App';
-import Layout from './Layout';
+
+import App from '../../../App';
+import { Layout } from '../../../Layout';
 
 const middlewares = [thunk];
 const mockStore = configureStore(middlewares);

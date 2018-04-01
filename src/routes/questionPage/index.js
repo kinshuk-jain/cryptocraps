@@ -1,7 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
 
-import Layout from '../../components/Layout';
+import { Layout } from '../../components/Layout';
 import QuestionPage from './QuestionPage';
 
 async function action({ params }) {
