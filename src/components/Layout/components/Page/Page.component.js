@@ -37,6 +37,10 @@ const Page = props => {
   );
 };
 
+Page.defaultProps = {
+  showScrollToTop: false,
+};
+
 Page.propTypes = {
   hideTopBar: PropTypes.bool.isRequired,
   children: PropTypes.node.isRequired,

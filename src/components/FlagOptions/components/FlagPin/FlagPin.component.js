@@ -9,10 +9,10 @@ import { withHover } from '../../../common/';
 const FlagPin = props => {
   const { onOptionClick, showHover } = props;
   return (
-    <div>
+    <div onClick={onOptionClick}>
       <i className="icon-ellipsis_vertical" />
       {showHover ? (
-        <ul className={s.flagPin} onClick={onOptionClick}>
+        <ul className={s.flagPin}>
           <li id={FLAG_OPTIONS.FLAG.ID}>
             <i className="icon-flag" /> {FLAG_OPTIONS.FLAG.NAME}
           </li>

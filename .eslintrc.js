@@ -80,6 +80,7 @@ module.exports = {
     'import/prefer-default-export': 'off',
 
     'react/sort-comp': 'off',
+    'react/forbid-prop-types': 'off',
 
     // Allow .js files to use JSX syntax
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md

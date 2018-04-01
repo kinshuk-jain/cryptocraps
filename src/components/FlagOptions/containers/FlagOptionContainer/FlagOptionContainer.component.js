@@ -19,6 +19,7 @@ class FlagOptionContainer extends React.Component {
   };
 
   flagOptionClickHandler = e => {
+    e.stopPropagation();
     const li = e.target && e.target.closest('li');
     if (li) {
       switch (li.id) {
