@@ -23,7 +23,7 @@ const withHover = Component => {
     onMouseOutHandler = () => {
       this.timeout = setTimeout(() => {
         this.setState({ showHover: false });
-      }, 100);
+      }, 0);
     };
 
     render() {
