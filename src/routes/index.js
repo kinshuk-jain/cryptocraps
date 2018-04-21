@@ -15,10 +15,10 @@ const routes = {
       load: () =>
         import(/* webpackChunkName: 'questionPage' */ './questionPage'),
     },
-    // {
-    //   path: '/login',
-    //   load: () => import(/* webpackChunkName: 'login' */ './login'),
-    // },
+    {
+      path: '/login',
+      load: () => import(/* webpackChunkName: 'login' */ './login'),
+    },
     // {
     //   path: '/register',
     //   load: () => import(/* webpackChunkName: 'register' */ './register'),

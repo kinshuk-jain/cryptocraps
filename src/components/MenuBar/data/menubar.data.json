@@ -1,0 +1,24 @@
+{
+  "links": [
+    {
+      "name": "Quick Links",
+      "href": "/"
+    },
+    {
+      "name": "Popular Events",
+      "href": "/admin"
+    },
+    {
+      "name": "Sports",
+      "href": "/privacy"
+    },
+    {
+      "name": "Politics",
+      "href": "/privacy"
+    },
+    {
+      "name": "CryptoCurrency",
+      "href": "/privacy"
+    }
+  ]
+}

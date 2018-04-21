@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './ActionHelper.component.css';
-import { withHover } from '../../../../common';
+import { withHover } from '../../../higherOrderComponents';
 
 const Help = props => {
   const { showHover, data, name } = props;

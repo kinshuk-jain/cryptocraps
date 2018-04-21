@@ -1,4 +1,4 @@
-@import '../variables.css';
+@import '../../../variables.css';
 
 .root {
   display: inline-block;
@@ -53,4 +53,9 @@
 
 .categoryTitle span {
   color: var(--Jade);
+}
+
+.menuItem {
+  text-decoration: none;
+  color: inherit;
 }

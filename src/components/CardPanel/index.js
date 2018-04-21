@@ -1,3 +1,4 @@
+import { CardPanel } from './components';
 import { FlagOption } from './containers/FlagOptionContainer/FlagOptionContainer.container';
 
-export { FlagOption };
+export { CardPanel, FlagOption };

@@ -1,4 +1,4 @@
-@import '../../../../variables.css';
+@import '../../../variables.css';
 
 .action {
   position: relative;
@@ -42,11 +42,12 @@
 .dataItem {
   padding: 10px 3px;
   text-align: left;
-  border-bottom: 1px solid var(--Trout);
+  border-bottom: 1px solid var(--MineShaft);
 }
 
 .dataItem:hover {
   background: var(--MineShaft);
+  color: var(--Green);
 }
 
 .dataItem:last-child {

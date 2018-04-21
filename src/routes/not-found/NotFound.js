@@ -1,10 +1,12 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './NotFound.css';
+import history from '../../history';
 
 import { Footer } from '../../components/Footer';
-import PopularEvents from '../../components/PopularEvents';
+import { PopularEvents } from '../../components/PopularEvents';
 import { Link } from '../../components/Link';
 
 class NotFound extends React.Component {
@@ -23,6 +25,10 @@ class NotFound extends React.Component {
             different keyword.
           </p>
           <Link to="/">Go To Home</Link>
+          <span> . </span>
+          <Link to="" onClick={() => history.go(-1)}>
+            Go Back
+          </Link>
         </div>
         <div className={s.containerRight}>
           <PopularEvents />

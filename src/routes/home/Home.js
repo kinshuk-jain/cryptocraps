@@ -5,8 +5,8 @@ import cx from 'classnames';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Home.css';
 
-import PostCard from '../../components/PostCard';
-import PopularEvents from '../../components/PopularEvents';
+import { CardPanel } from '../../components/CardPanel';
+import { PopularEvents } from '../../components/PopularEvents';
 import QuickLinks from '../../components/QuickLinks';
 import SignUp from '../../components/SignUp';
 import PinBar from '../../components/PinBar';
@@ -31,10 +31,19 @@ class Home extends React.Component {
             <QuickLinks />
           </div>
           <div className={cx(s.mid, { [s.bigMid]: !this.props.showSidebar })}>
-            <PostCard key={1} />
-            <PostCard key={2} />
-            <PostCard key={3} />
-            <PostCard key={4} />
+            <CardPanel key={1}>
+              <CardPanel.Header hasPin />
+              The name is bond, james bond
+              <hr />
+              <CardPanel.Footer />
+            </CardPanel>
+            <CardPanel key={2}>
+              <CardPanel.Header hasPin />
+              <hr />
+              <CardPanel.Footer />
+            </CardPanel>
+            <CardPanel key={3} />
+            <CardPanel key={4} />
           </div>
           <div className={s.right}>
             <PopularEvents />

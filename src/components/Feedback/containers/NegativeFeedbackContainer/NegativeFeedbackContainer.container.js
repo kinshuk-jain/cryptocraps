@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { ALLOWED_COMMENT_LENGTH } from '../../Feedback.constants';
 // import { escapeHTML } from '../../../../core/utils';
-import data from '../../data/data.json';
+import data from '../../data/feedback.data.json';
 
 import { NegativeFeedback } from '../../components';
 

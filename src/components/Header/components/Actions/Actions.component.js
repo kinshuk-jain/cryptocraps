@@ -1,6 +1,7 @@
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Actions.component.css';
+import history from '../../../../history';
 
 import { ActionHelper } from '../../components';
 import { ACTION_DATA } from '../../data/action.data';
@@ -20,7 +21,9 @@ class HeaderActions extends React.Component {
             name={action.name}
           />
         ))}
-        <div className={s.askQuestion}>Login</div>
+        <div className={s.askQuestion} onClick={() => history.push('/login')}>
+          Login
+        </div>
         <div className={s.askQuestion}>Sign Up</div>
       </div>
     );

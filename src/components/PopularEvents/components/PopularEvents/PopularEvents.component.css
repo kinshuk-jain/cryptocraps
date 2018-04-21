@@ -1,4 +1,4 @@
-@import '../variables.css';
+@import '../../../variables.css';
 
 .container {
   background: var(--CodGray);
@@ -8,20 +8,14 @@
   overflow: hidden;
 }
 
-.question {
+.event {
   cursor: pointer;
-  padding: 15px 0;
-  border-bottom: 1px solid var(--Trout);
+  padding: 10px 0;
   width: 90%;
-  margin: 0 auto;
-}
-
-.question:last-child {
-  border: none;
-}
-
-.question:hover {
-  color: var(--Silver);
+  font-weight: 400;
+  margin: 0;
+  text-align: left;
+  padding-bottom: 10px;
 }
 
 .title {
