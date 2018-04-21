@@ -1,3 +1,3 @@
-import Link from './containers/Link.container';
+import Link from './containers/SimpleLink/Link.container';
 
 export { Link };

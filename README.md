@@ -67,7 +67,7 @@ Application Structure -
 |   |-- actions: actions common to more than 2 components
 |   |-- reducers: reducers common to more than 2 components
 |   |-- selectors: selectors common to more than 2 components
-|   |-- features: self-explanatory 
+|   |-- components: self-explanatory 
 |   |   |-- Container: Container components
 |   |   |-- Components: Presentational components
 |   |   |-- State: State for this Pod

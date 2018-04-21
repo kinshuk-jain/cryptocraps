@@ -4,7 +4,7 @@ import runtime from './runtime';
 import { hideTopBar } from './topBar';
 import { showSidebar } from './categoryNavBar';
 import { showAddQuestion } from './additionalQuestion';
-import { getQuesAddedToPinBar } from './pinBar';
+import { getItemAddedToPinBar } from './pinBar';
 
 export default combineReducers({
   user,
@@ -12,5 +12,5 @@ export default combineReducers({
   hideTopBar,
   showSidebar,
   showAddQuestion,
-  getQuesAddedToPinBar,
+  getItemAddedToPinBar,
 });

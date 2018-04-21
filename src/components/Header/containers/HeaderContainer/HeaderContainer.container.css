@@ -26,9 +26,10 @@
 @media (max-width: 1260px) {
   .header {
     width: 1260px;
+    padding: 0 3%;
   }
 
   .logoInfo {
-    margin-right: 5%;
+    margin-right: 4%;
   }
 }

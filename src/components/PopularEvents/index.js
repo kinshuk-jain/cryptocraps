@@ -1,1 +1,3 @@
-export { PopularEvents } from './containers/PopularEvents.container';
+export {
+  PopularEvents,
+} from './containers/PopularEventsContainer/PopularEvents.container';

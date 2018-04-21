@@ -1,1 +1,1 @@
-export { MenuBar } from './containers/MenuBar.container';
+export { MenuBar } from './containers/MenuBarContainer/MenuBar.container';

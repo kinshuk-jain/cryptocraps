@@ -1,3 +1,3 @@
-import Modal from './containers/Modal.container';
+import Modal from './containers/SimpleModal/Modal.container';
 
 export { Modal };

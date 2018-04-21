@@ -8,7 +8,7 @@ import s from './Home.css';
 import { CardPanel } from '../../components/CardPanel';
 import { PopularEvents } from '../../components/PopularEvents';
 import { QuickLinks } from '../../components/QuickLinks';
-import PinBar from '../../components/PinBar';
+import { PinBar } from '../../components/PinBar';
 import { Footer } from '../../components/Footer';
 
 class Home extends React.Component {
@@ -31,13 +31,13 @@ class Home extends React.Component {
           </div>
           <div className={cx(s.mid, { [s.bigMid]: !this.props.showSidebar })}>
             <CardPanel key={1}>
-              <CardPanel.Header hasPin title="India Vs England" />
+              <CardPanel.Header hasPin title="India Vs England" link="/123" />
               The name is bond, james bond
               <hr />
               <CardPanel.Footer timeToGoLive={0} />
             </CardPanel>
             <CardPanel key={2}>
-              <CardPanel.Header hasPin title="Musselburgh" />
+              <CardPanel.Header hasPin title="Musselburgh" link="/456" />
               <hr />
               <CardPanel.Footer timeToGoLive={1} />
             </CardPanel>
