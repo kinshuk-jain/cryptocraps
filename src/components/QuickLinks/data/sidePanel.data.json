@@ -1,0 +1,45 @@
+{
+  "title": "Quick Links",
+  "panelItems": [
+    {
+      "icon": "icon-BTC-alt",
+      "name": "Football",
+      "activeBets": 12
+    },
+    {
+      "icon": "icon-BCH-alt",
+      "name": "Boxing",
+      "activeBets": 12
+    },
+    {
+      "icon": "icon-GLD",
+      "name": "Hockey",
+      "activeBets": 12
+    },
+    {
+      "icon": "icon-ETC",
+      "name": "Tennis",
+      "activeBets": 12
+    },
+    {
+      "icon": "icon-ETC",
+      "name": "Tennis",
+      "activeBets": 12
+    },
+    {
+      "icon": "icon-DASH-alt",
+      "name": "Darts",
+      "activeBets": 12
+    },
+    {
+      "icon": "icon-XRP-alt",
+      "name": "Rugby",
+      "activeBets": 12
+    },
+    {
+      "icon": "icon-OMG",
+      "name": "Basketball",
+      "activeBets": 12
+    }
+  ]
+}

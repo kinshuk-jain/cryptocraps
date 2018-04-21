@@ -55,6 +55,9 @@ class Html extends React.Component {
           />
         </head>
         <body>
+          <noscript>
+            This site requires javascript to work. Please enable javascript and continue
+          </noscript>
           <div id="app" dangerouslySetInnerHTML={{ __html: children }} />
           <script
             dangerouslySetInnerHTML={{ __html: `window.App=${serialize(app)}` }}

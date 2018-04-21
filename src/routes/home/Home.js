@@ -7,7 +7,7 @@ import s from './Home.css';
 
 import { CardPanel } from '../../components/CardPanel';
 import { PopularEvents } from '../../components/PopularEvents';
-import QuickLinks from '../../components/QuickLinks';
+import { QuickLinks } from '../../components/QuickLinks';
 import SignUp from '../../components/SignUp';
 import PinBar from '../../components/PinBar';
 import { Footer } from '../../components/Footer';
@@ -28,22 +28,20 @@ class Home extends React.Component {
           <div
             className={cx(s.left, { [s.smallLeft]: !this.props.showSidebar })}
           >
-            <QuickLinks />
+            <QuickLinks title="Quick Links" />
           </div>
           <div className={cx(s.mid, { [s.bigMid]: !this.props.showSidebar })}>
             <CardPanel key={1}>
-              <CardPanel.Header hasPin />
+              <CardPanel.Header hasPin title="India Vs England" />
               The name is bond, james bond
               <hr />
               <CardPanel.Footer />
             </CardPanel>
             <CardPanel key={2}>
-              <CardPanel.Header hasPin />
+              <CardPanel.Header hasPin title="Musselburgh" />
               <hr />
               <CardPanel.Footer />
             </CardPanel>
-            <CardPanel key={3} />
-            <CardPanel key={4} />
           </div>
           <div className={s.right}>
             <PopularEvents />
