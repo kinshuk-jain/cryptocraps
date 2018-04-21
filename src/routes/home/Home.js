@@ -8,7 +8,6 @@ import s from './Home.css';
 import { CardPanel } from '../../components/CardPanel';
 import { PopularEvents } from '../../components/PopularEvents';
 import { QuickLinks } from '../../components/QuickLinks';
-import SignUp from '../../components/SignUp';
 import PinBar from '../../components/PinBar';
 import { Footer } from '../../components/Footer';
 
@@ -35,19 +34,18 @@ class Home extends React.Component {
               <CardPanel.Header hasPin title="India Vs England" />
               The name is bond, james bond
               <hr />
-              <CardPanel.Footer />
+              <CardPanel.Footer timeToGoLive={0} />
             </CardPanel>
             <CardPanel key={2}>
               <CardPanel.Header hasPin title="Musselburgh" />
               <hr />
-              <CardPanel.Footer />
+              <CardPanel.Footer timeToGoLive={1} />
             </CardPanel>
           </div>
           <div className={s.right}>
             <PopularEvents />
           </div>
         </div>
-        <SignUp />
         <Footer />
         <PinBar />
       </div>

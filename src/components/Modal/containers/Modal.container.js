@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import s from './Modal.css';
-import { disableBodyScrolling } from '../../core/utils';
+import s from './Modal.container.css';
+import { disableBodyScrolling } from '../../../core/utils';
 
 class Modal extends Component {
   componentDidMount() {
