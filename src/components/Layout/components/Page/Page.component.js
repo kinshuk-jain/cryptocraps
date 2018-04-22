@@ -10,7 +10,7 @@ import s from './Page.component.css';
 
 import { scrollToTop } from '../../../../core/utils';
 import { Header } from '../../../Header';
-import TopBar from '../../../TopBar';
+import { TopBar } from '../../../TopBar';
 
 const Page = props => {
   const { hideTopBar, children, showScrollToTop } = props;

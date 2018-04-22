@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import _ from 'lodash';
 
 import { addToPinBar } from '../../../../actions/pinBarActions';
 import { PinBarComponent } from '../../components';
@@ -28,6 +29,7 @@ class PinBarContainer extends Component {
       delete eventList[getItemAddedToPinBar.link];
       this.setState({
         eventList,
+        expanded: !_.isEmpty(eventList),
       });
     } else {
       // new eventId not in eventList, add it

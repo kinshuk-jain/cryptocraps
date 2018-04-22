@@ -1,15 +1,14 @@
 /* eslint-disable no-cond-assign, no-plusplus, prettier/prettier */
 import React, { Component } from 'react';
-import cx from 'classnames';
-import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import s from './SearchBar.css';
+import { Search } from '../../components';
+import data from '../../data/search.data.json';
+import { addItemToLS, fetchAndParseLSItem } from '../../../../core/utils';
 
-import { addItemToLS, fetchAndParseLSItem } from '../../core/utils';
 // TODO: search suggestions shoulld not show more than 5 results
 class SearchBar extends Component {
   state = {
     expand: false,
-    searchResults: [1, 2, 3, 4],
+    searchResults: data.results,
     selectedKey: -1,
   };
 
@@ -58,11 +57,11 @@ class SearchBar extends Component {
     this.setState({ expand: false, selectedKey: -1 });
   }
 
-  handleChange(e) {
+  handleChange(e, k) {
     let searchString = e.target.value.trim();
     // get key pressed by user
     const key = e.which || e.keyCode;
-    let { selectedKey } = this.state;
+    let selectedKey = k;
     switch (key) {
       case 38: // up arrow
         this.setState({
@@ -99,59 +98,30 @@ class SearchBar extends Component {
     }
   }
 
+  onClickHandler = () => {
+    this.setState({ expand: true })
+  }
+
+  onBlurHandler = () => {
+    this.setState({ expand: false })
+  }
+
   render() {
     const { expand, searchResults, selectedKey } = this.state;
     return (
-      <div className={s.searchBar}>
-        <i className="icon-search" />
-        <input
-          ref={el => {
-            this.search = el;
-          }}
-          onClick={() => this.setState({ expand: true })}
-          onBlur={() => this.setState({ expand: false })}
-          onKeyUp={e => this.handleChange(e)}
-          autoComplete="off"
-          type="search"
-          placeholder="search"
-        />
-        {expand && (
-          <div className={s.suggestedSearch}>
-            {searchResults ? (
-              <ul>
-                {searchResults.map((data, index) => (
-                  <li
-                    className={cx(s.searchItem, {
-                      [s.active]: selectedKey === index,
-                    })}
-                    key={index}
-                  >
-                    <span className={s.searchSuggestion}>{data}</span>
-                  </li>
-                ))}
-              </ul>
-            ) : null}
-            {this.recentSearches.length ? (
-              <ul>
-                <div className={s.popProd}>Recent Searches</div>
-                {this.recentSearches.map((data, index) => (
-                  <li
-                    className={cx(s.searchItem, {
-                      [s.active]: selectedKey === index + searchResults.length,
-                    })}
-                    key={index}
-                  >
-                    <span>{data}</span>
-                    <i className="icon-arrow-up-left2" />
-                  </li>
-                ))}
-              </ul>
-            ) : null}
-          </div>
-        )}
-      </div>
+      <Search
+        expand={expand}
+        searchResults={searchResults}
+        recentSearches={this.recentSearches}
+        selectedKey={selectedKey}
+        onClick={this.onClickHandler}
+        onBlur={this.onBlurHandler}
+        onKeyUp={(e) => this.handleChange(e, selectedKey)}
+        innerRef={(el) => { this.search = el; }}
+        placeholder="search"
+      />
     );
   }
 }
 
-export default withStyles(s)(SearchBar);
+export default SearchBar;

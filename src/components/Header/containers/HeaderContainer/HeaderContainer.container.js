@@ -4,7 +4,7 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './HeaderContainer.container.css';
 
 import { Link } from '../../../Link';
-import SearchBar from '../../../SearchBar';
+import { SearchBar } from '../../../SearchBar';
 import { MenuBar } from '../../../MenuBar';
 
 import { ActionContainer } from '../../../Header';
