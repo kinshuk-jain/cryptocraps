@@ -46,7 +46,7 @@ const PinBarComponent = props => {
 };
 
 PinBarComponent.propTypes = {
-  eventList: PropTypes.array.isRequired,
+  eventList: PropTypes.object.isRequired,
   expanded: PropTypes.bool.isRequired,
   expandPinBar: PropTypes.func.isRequired,
   closeFn: PropTypes.func.isRequired,
